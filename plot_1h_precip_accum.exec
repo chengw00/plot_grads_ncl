@@ -1,0 +1,11 @@
+*reset
+run color_ybl_precip.gs
+set mpdset hires
+*set map color style thickness
+set map 1 1 7
+set gxout shaded
+set grads off
+set clevs   0.0 0.1 0.2 0.4 0.8 1.6 3.2 6.2 12.8 25.6 51.2
+set ccols   0  23  24  25  26  27  28  29  30   31   32   33
+d accum.2-accum.1
+cbar

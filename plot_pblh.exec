@@ -1,0 +1,19 @@
+reset
+set gxout shaded
+set mpdset hires
+*set map color style thickness
+set map 1 1 7
+set grads off
+*run /home/chengw/grads_color/light_grey_2_black.gs
+*d hgt
+*cbar
+*run /home/chengw/grads_color/rgbset.gs.orig
+run color_ybl_precip.gs
+*set ccols  23  24  25  26  27  28  29   30   31   32   33
+*set ccols 24  25  26  27  28  29  30  31   32  33
+* =============== contour temperature ======
+set z 1
+set clevs      100 200 400 800 1200 1600 2000 2500 3000 
+set ccols  24  25  26  27  28   29   30   31   32  33  
+d pblh
+cbar

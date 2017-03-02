@@ -1,0 +1,57 @@
+*  Plot 800-500 hPa RH, 700-hPa T, wind barb  at lower left
+*
+* input:
+*      1) how many other vectors to plot
+*
+run color_wrf.gs
+set xlopts 1 4 0.17
+set ylopts 1 4 0.17
+* 
+* ------- plot RH -------------
+*
+set mpdset hires
+*set map color style thickness
+set map 1 1 7
+set gxout shaded
+set xlint 4
+set ylint 4
+set grads off
+set clevs 15 30 60 70 80 90 100
+*set ccols 36 37 38 39 40 41 42 43
+set ccols 36 37 0 0 40 41 42 43
+set lev 700
+d smth9(rh)
+*run cbar_big_vert.gs
+*run colorbar.fiorino.gs 1.0 1 9.6 4.25
+cbar
+*
+* ---- plot T ------
+*
+set gxout contour
+set clab on
+set clopts -1 -1 0.18
+set cthick 8
+* --------- plot pos. values red --------
+set ccolor 2
+set clskip 4
+set clevs  2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 52 54 56 58 60
+set cstyle 1
+set lev 700
+d smth9(tempc)
+*d smth9(smth9(smth9(smth9(smth9(smth9(smth9(smth9(tempc))))))))
+* ------- plot neg. values blue and dashed -----
+set ccolor 4
+set clskip 4
+set clevs -60 -58 -56 -54 -52 -50 -48 -46 -44 -42 -40 -38 -36 -34 -32 -30 -28 -26 -24 -22 -20 -18 -16 -14 -12 -10 -8 -6 -4 -2 0
+set cstyle 1
+set lev 700
+d smth9(tempc)
+*d smth9(smth9(smth9(smth9(smth9(smth9(smth9(smth9(tempc))))))))
+*
+* ---- draw wind barb --------
+set gxout barb
+set ccolor 1
+set cthick 3
+d skip(2*U,&0,&0);2*V
+*
+*draw string 1.2 8.0  WRF 800-500 hPa RH, 700-hPa T (C) and wind (m/s)'

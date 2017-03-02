@@ -1,0 +1,15 @@
+*  Set colors
+*
+'set rgb 21 255 255 255'
+'set rgb 22 0   0   0'
+'set rgb 23 255 255 255'
+'set rgb 24 124 254 252'
+'set rgb 25 4   170 252'
+'set rgb 26 4    52 204'
+'set rgb 27 100 254   4'
+'set rgb 28 252 222   4'
+'set rgb 29 252 134   4'
+'set rgb 30 252  70   4'
+'set rgb 31 212   2  52'
+'set rgb 32 115   2 100'
+'set rgb 33 150 150 150'

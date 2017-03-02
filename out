@@ -1,0 +1,2971 @@
+2009053112
+abc
+ARWpost.exe
+cape.f
+cape.o
+colorbar.fiorino.gs
+color_wrf.gs
+color_wrf.txt
+color_ybl_precip.gs
+color_ybl_precip.txt
+color_yellow_green_rh.txt
+color_yellow_green_rh.txt.orig
+cycle_case1.dat
+cycle.dat
+diag_wrf_v2_d01.exe
+diag_wrf_v2_d02.exe
+diag_wrf_v2_d03.exe
+diag_wrf_v2.exe
+diag_wrf_v2.f
+diag_wrf_v2.o
+extract_precip_accum_1h.csh
+extract_precip_accum_3h.csh
+grads_names.h
+master.csh
+master_plot_ncl.csh
+out
+plot_1h_precip_accum.exec
+plot_3h_precip_accum.exec
+plot_6h_precip_accum.exec
+plot_6h_precip_accum_part1.csh
+plot_6h_precip_accum_part2.csh
+plot_absvort500.exec
+plot_cape.exec
+plot_cin.exec
+plot_cloud_top_tempc.exec
+plot_colormap.ncl
+plot_eta_levels_part1.csh
+plot_eta_levels_part2.csh
+plot_height850_d03.ncl
+plot_height_contour_d01.ncl
+plot_height_d01.ncl
+plot_hgt1000.exec
+plot_hgt1000.exec.orig
+plot_hgt1000.exec.shaded
+plot_hgt250.exec
+plot_hgt850.exec
+plot_hgt850.exec.orig
+plot_hgt850.exec.shaded
+plot_isotach_d01.ncl
+plot_pblh.exec
+plot_precip_accum_1h.csh
+plot_precip_accum_3h.csh
+plot_pressure_levels_part1.csh
+plot_pressure_levels_part2.csh
+plot_qh_total_zetap.ncl
+plot_qh_zetap.exec
+plot_rh_2m_ncl.csh
+plot_rh700.exec
+plot_rh_d01.ncl
+plot_rh_d03.ncl
+plot_rh.exec
+plot_rh_plev_ncl.csh
+plotskew_aug2002.gs
+plot_slp.exec
+plot_slp_magen.exec
+plot_sounding.csh
+plot_t2m_d01.ncl
+plot_t2m_d03.ncl
+plot_t2m_ncl.csh
+plot_tcp_ncl.csh
+plot_tempc_eta1.exec
+plot_terrain_d03.ncl
+plot_terrain_with_rh_2m_70contour_ncl.csh
+plot_terrain_with_rh_2m_90contour_d03.ncl
+plot_terrain_with_rh_2m_90contour_ncl.csh
+plot_terrain_with_tcp_contour_ncl.csh
+plot_tmp2m.exec
+plot_tmp850_d03.ncl
+plot_tmp850.exec
+plot_tmp_plev_ncl.csh
+plot_total_cond_wp.exec
+rewrite_sounding.exe
+rewrite_sounding.f90
+rewrite_sounding.o
+rotate_wind_to_grid.f
+rotate_wind_to_grid.o
+run
+run.csh
+run_SLP111111
+run_SLP111111_shadow
+run_v2
+test.csh
+test.ncl
+times.ncl
+writeb3D.c
+writeb3D.o
+wrfout_d03_2009-05-31_12:00:00.nc@ 2009 05 31 12 2009-05-31_12
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_13:00:00.nc@ 2009 05 31 13 2009-05-31_13
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_14:00:00.nc@ 2009 05 31 14 2009-05-31_14
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_15:00:00.nc@ 2009 05 31 15 2009-05-31_15
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_16:00:00.nc@ 2009 05 31 16 2009-05-31_16
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_17:00:00.nc@ 2009 05 31 17 2009-05-31_17
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_18:00:00.nc@ 2009 05 31 18 2009-05-31_18
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_19:00:00.nc@ 2009 05 31 19 2009-05-31_19
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_20:00:00.nc@ 2009 05 31 20 2009-05-31_20
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_21:00:00.nc@ 2009 05 31 21 2009-05-31_21
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_22:00:00.nc@ 2009 05 31 22 2009-05-31_22
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-05-31_23:00:00.nc@ 2009 05 31 23 2009-05-31_23
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_00:00:00.nc@ 2009 06 01 00 2009-06-01_00
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_01:00:00.nc@ 2009 06 01 01 2009-06-01_01
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_02:00:00.nc@ 2009 06 01 02 2009-06-01_02
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_03:00:00.nc@ 2009 06 01 03 2009-06-01_03
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_04:00:00.nc@ 2009 06 01 04 2009-06-01_04
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_05:00:00.nc@ 2009 06 01 05 2009-06-01_05
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_06:00:00.nc@ 2009 06 01 06 2009-06-01_06
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_07:00:00.nc@ 2009 06 01 07 2009-06-01_07
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_08:00:00.nc@ 2009 06 01 08 2009-06-01_08
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_09:00:00.nc@ 2009 06 01 09 2009-06-01_09
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_10:00:00.nc@ 2009 06 01 10 2009-06-01_10
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_11:00:00.nc@ 2009 06 01 11 2009-06-01_11
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc
+wrfout_d03_2009-06-01_12:00:00.nc@ 2009 06 01 12 2009-06-01_12
+ Copyright (C) 1995-2009 - All Rights Reserved
+ University Corporation for Atmospheric Research
+ NCAR Command Language Version 5.1.0
+ The use of this software is governed by a License Agreement.
+ See http://www.ncl.ucar.edu/ for more details.
+
+
+Variable: n_x
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	135
+
+
+Variable: n_y
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	255
+
+
+Variable: n_z
+Type: integer
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	56
+
+
+Variable: xlat_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LATITUDE, SOUTH IS NEGATIVE
+  units :	degree_north
+  stagger :	
+(0)	28.24142
+
+
+Variable: xlon_sw
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+Number Of Attributes: 5
+  FieldType :	104
+  MemoryOrder :	XY 
+  description :	LONGITUDE, WEST IS NEGATIVE
+  units :	degree_east
+  stagger :	
+(0)	32.33243
+
+
+Variable: xlon_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	32.17249
+
+
+Variable: dlon_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03579462
+
+
+Variable: xlat_sw_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	28.25151
+
+
+Variable: dlat_grads
+Type: float
+Total Size: 4 bytes
+            1 values
+Number of Dimensions: 1
+Dimensions and sizes:	[1]
+Coordinates: 
+(0)	0.03020347
+ caclulate absolute vorticity in 10^5
+ find tropopause
+ calculating 2-m, 10-m stuff
+ 2-m RH
+ 2-m EPT
+ 2-m tempc
+ 2-m dewptc

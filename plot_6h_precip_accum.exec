@@ -1,0 +1,9 @@
+reset
+set mpdset hires
+*set map color style thickness
+set map 1 1 7
+set gxout shaded
+set grads off
+set clevs 0.1 1 2 4 8 16 32 64
+d rainnc.2-rainnc.1
+cbar

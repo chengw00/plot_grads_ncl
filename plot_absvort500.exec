@@ -1,0 +1,69 @@
+*  Plot 500-hPa abs vort, height etc at upper right
+*
+* input: 
+*    &0: how many other vectors to plot
+*
+run color_wrf.gs
+set xlopts 1 4 0.17
+set ylopts 1 4 0.17
+* 
+* ------- plot abs vort -------------
+*
+set mpdset hires
+*set map color style thickness
+set map 1 1 7
+set gxout shaded
+set xlint 4
+set ylint 4
+set grads off
+set lev 500
+set clevs -2 0 2 4 6 8 10 12 14 16 18 20 22 24
+set ccols 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35
+*d smth9(smth9(smth9(smth9(smth9(smth9(smth9(smth9(absvort))))))))
+d smth9(absvort)
+cbar
+*run colorbar.fiorino.gs 1.0 1 9.6 4.25
+*run cbar_big_vert.gs
+*
+* ---- plot height ------
+*
+set gxout contour
+set clab on
+set clopts -1 -1 0.18
+set cthick 8
+set clskip 3
+set ccolor 18
+*set cint 30
+*set clevs 4810 4840 4870 4900 4930 4960 4990 5020 5050 5080 5110 5140 5170 5200 5230 5260 5290 5320 5350 5380 5410 5440 5470 5500 5530 5560 5590 5620 5650 5680 5710 5740 5770 5800 5830 5860 5890 5920 5950 5980 6010
+set clevs 4810 4870 4930 4990 5050 5110 5170 5230 5290 5350 5410 5470 5530 5590 5650 5710 5770 5830 5890 5950 6010
+set lev 500
+*d smth9(smth9(smth9(smth9(smth9(smth9(smth9(smth9(z))))))))
+d smth9(z)
+*
+* ---- draw wind barb --------
+set gxout barb
+set ccolor 1
+set cthick 3
+set lev 500
+d skip(2*u,&0,&0);2*v
+*
+* ------ plot average of w (700-500 hPa) ----------
+*
+* positive values
+*
+*set ccolor 2
+*set cthick 8
+*set cmin 10
+*set cint 10
+*d 100*ave(w,lev=700,lev=500)
+**d 100*ave(-287*TMPprs*VVELprs/(100*9.8*lev),lev=700,lev=500)
+*
+* plot negative values 
+*set ccolor 51
+*set cmin 10
+*set cint 10
+*d -100*ave(w,lev=700,lev=500)
+**d 100*ave(287*TMPprs*VVELprs/(100*9.8*lev),lev=700,lev=500)
+*
+*'set strsiz 0.15'
+*'draw string 1.2 8.0  WRF 500-hPa abs vort (10^-5 s^-1), height (m) and w (cm/s)'

@@ -1,0 +1,40 @@
+*  Plot 500-hPa abs vort, height etc at upper right
+*
+* input: 
+*    &0: how many other vectors to plot
+*
+set grads off
+run color_wrf.gs
+set xlopts 1 4 0.17
+set ylopts 1 4 0.17
+set mpdset hires
+*set map color style thickness
+set map 1 1 7
+*
+set lev 250
+*
+set gxout shaded
+run /home/chengw/grads_color/rgbset.gs.orig
+set clevs 10 30 40 50 60 70 80 90
+d pow(u*u+v*v,0.5)
+cbar
+* ---- plot height ------
+*
+set gxout contour
+set clab on
+set clopts -1 -1 0.18
+set cthick 8
+set clskip 3
+set ccolor 18
+*set cint 30
+*set clevs 9000 9060 9120 9180 9240 9300 9360 9420 9480 9540 9600 9660 9720 9780 9840 9900 9960 10020 10080 10140 10200 10260 10320 10380 10440 10500 10560 10620 10680 10740 10800 10860 10920 10980 11040 11100 11160 11220 11280 11340
+set clevs 9000 9120 9240 9360 9480 9600 9720 9840 9960 10080 10200 10320 10440 10560 10680 10800 10920 11040 11160 11280 
+*d smth9(smth9(smth9(smth9(smth9(smth9(smth9(smth9(z))))))))
+d smth9(z)
+*
+* ---- draw wind barb --------
+set gxout barb
+set ccolor 1
+set cthick 5
+d skip(2*u,&0,&0);2*v
+*

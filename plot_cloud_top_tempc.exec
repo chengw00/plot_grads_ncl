@@ -1,0 +1,22 @@
+*  Plot 500-hPa abs vort, height etc at upper right
+*
+* input: 
+*    &0: how many other vectors to plot
+*
+*run color_wrf.gs
+set xlopts 1 4 0.17
+set ylopts 1 4 0.17
+set mpdset hires
+*set map color style thickness
+set map 1 1 7
+*
+*
+* ---- plot t ------
+*
+run /home/chengw/grads_color/rgbset.gs.orig
+set grads off
+set gxout shaded
+set clevs -70 -60 -50 -40 -30 -20 -10 0 10 20
+d cltopt
+cbar
+*
